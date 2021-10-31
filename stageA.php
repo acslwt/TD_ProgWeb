@@ -39,31 +39,33 @@
 
 ?>
 
-            <p>_______________________________________________________________________________________________________________________________________________________________________</p>
-            <p><u><b>Numero stage </b></u>: <?php echo $stageEtu ?></p>
-            <p><u><b>Sujet : </b></u><?php echo $sujet[0]['sujet'] ?></p>
-            <p><u><b>Responsable : </b></u><?php echo $sujet[0]['respEnt'] ?></p>
-            <p><u><b>Tuteur : </b></u><?php echo $sujet[0]['respPeda'] ?></p>
+                <p>_______________________________________________________________________________________________________________________________________________________________________</p>
+                <p><u><b>Numero stage </b></u>: <?php echo $stageEtu ?></p>
+                <p><u><b>Sujet : </b></u><?php echo $sujet[0]['sujet'] ?></p>
+                <p><u><b>Responsable : </b></u><?php echo $sujet[0]['respEnt'] ?></p>
+                <p><u><b>Tuteur : </b></u><?php echo $sujet[0]['respPeda'] ?></p>
 
 <?php
 
-            foreach($pw as $etudiant){
+                foreach($pw as $etudiant){
 
 ?>
 
-<p><?php
+<p>
+<?php
 
-                if($etudiant['numStageA']==$stageEtu){
+                    if($etudiant['numStageA']==$stageEtu){
 
-                    echo $etudiant['nom'];
+                        echo $etudiant['nom'];
 
-                }
+                    }
 
-?></p>
+?>
+</p>
 
 <?php
 
-            }
+                }
 
         }
 
